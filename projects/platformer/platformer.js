@@ -64,7 +64,7 @@ $(function () {
     // example usage: createCollectable(type, x, y, gravity, bounce)
     createCollectable("kennedi",780,550,0,0)
     createCollectable("max",1280,525,0,0)
-    createCollectable('diamond',636,350,0,0)
+    createCollectable('diamond',636,330,0,0)
 
 
 
