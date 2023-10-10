@@ -26,14 +26,14 @@ $(function () {
      * The grid will place both horizontal and vertical platforms incremented 100 pixels apart
      * This can give you a better idea of where to create new platforms
      * Comment the lines out to remove the grid
-     */
+    //  */
 
     // for (let i = 100; i < canvas.width; i += 100) {
     //   createPlatform(i, canvas.height, -1, -canvas.height);
     // }
     // for (let i = 100; i < canvas.height; i += 100) {
     //   createPlatform(canvas.width, i, -canvas.width, -1);
-    // }
+    }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -43,6 +43,16 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
+    createPlatform(700,610,300,10)
+    createPlatform(1100,580,10,10)
+    createPlatform(1300,560,10,10)
+    createPlatform(780,450,300,10)
+    createPlatform(620,400,10,10)
+    createPlatform(20,530,50,20)
+    createPlatform(350,530,10,10)
+    createPlatform(610,600,10,10)
+  
+
 
 
 
@@ -52,6 +62,9 @@ $(function () {
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
+    createCollectable("kennedi",780,550,0,0)
+    createCollectable("max",1280,525,0,0)
+    createCollectable('diamond',636,350,0,0)
 
 
 
@@ -61,6 +74,9 @@ $(function () {
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
+    createCannon('bottom',1270,1000,20,20)
+    createCannon('left',650,10,99999,20);
+    createCannon('top',480,4000,100,1020)
 
 
 
@@ -68,7 +84,7 @@ $(function () {
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
     /////////////////////////////////////////////////
-  }
+  
 
   registerSetup(setup);
 });
