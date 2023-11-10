@@ -1,5 +1,5 @@
 body {
-    background: rgb(125, 198, 205);
+    background-image:url(https://images.hdqwalls.com/download/galaxy-stars-flare-abstract-8k-td-1920x1080.jpg);
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: arial;
@@ -8,10 +8,54 @@ body {
   max-width: 800px;
     margin: auto;
 }
+/*image editing */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*image editing */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #ee4d4d;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: rgba(196, 39, 39, 0.582);
+  color: rgb(7, 5, 5);
+  transform: rotateY(180deg);
+}
 
 /* navigation menu */
 nav {
-    background: rgb(245, 52, 3);
+    background:rgb(3, 189, 245);
    margin: 0 auto;
    margin-bottom: 20px;
     display: flex;
@@ -33,7 +77,7 @@ h1 {
 }
 a {
     text-decoration: none;
-    color: #fff;
+    color: #ddcece;
 }
 
 /* main container area beneath menu */
